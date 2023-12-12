@@ -1,5 +1,7 @@
 import './App.css'
-
+import Header  from './components/Header/Header'
+import TodoList  from './components/TodoList/TodoList'
+import Todoitem from './components/TodoList/TodoItem/TodoItem'
 function App() {
   const todoList = [
     {
@@ -30,8 +32,8 @@ function App() {
 
   return (
     <div className="App">
-      {/* Header here */}
-      {/* Todo list here*/}
+      <Header />
+      <TodoList data={todoList} />
     </div>
   )
 }
